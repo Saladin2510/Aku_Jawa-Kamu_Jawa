@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Tebak Angka Aksara Jawa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1><abbr title="Game Tebak Angka Aksara Jawa" style="text-decoration: none;">ꦒꦩꦺꦠꦺꦧꦏ꧀ꦄꦁꦏꦄꦏ꧀ꦱꦫꦗꦮ꧉</abbr></h1>
+        <p><abbr title="Tebak angka aksara Jawa yang terdiri dari satuan, puluhan, atau ratusan!" style="text-decoration: none;">꧋ꦠꦼꦧꦏꦤꦕꦕꦲꦺꦄꦏ꧀ꦱꦫꦗꦮꦱꦶꦁꦣꦸꦩꦣꦶꦱꦏꦱꦠꦸꦮꦤ꧀‌ꦣꦱ꧈ꦈꦠꦮꦄꦠꦸꦱꦤ꧀!</abbr></p>
+
+        <div class="game-area">
+            <p id="aksaraJawa" class="aksara-jawa p">꧐</p>
+            <input type="number" id="userInput" placeholder="Masukkan angka" />
+            <button onclick="checkAnswer()">Tebak</button>
+        </div>
+
+        <p id="result"></p>
+        <a href="../zildan/home.html" class="button">Balik beranda</a>
+        <button onclick="nextQuestion()">Pertanyaan Berikutnya</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

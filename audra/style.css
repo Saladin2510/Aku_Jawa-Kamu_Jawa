@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    font-family: 'Poppins';
+    background-color: #c2864b;
+}
+body {
+    margin: 0px;
+    padding: 20px;
+    background-image: url('maxresdefault-removebg-preview.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+.hero-grid {
+    display:flex;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+}
+.hero-card {
+    width: 200px; /* Set a fixed width for all hero cards */
+    height: 300px; /* Set a fixed height for all hero cards */
+    background-color: #fad7b4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.hero-card img {
+    width: 150px; /* Fixed width for images */
+    height: 150px; /* Fixed height for images */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.hero-card h3 {
+    margin: 18px 0;
+    font-size: 18px;
+    color: #333;
+}
+.hero-card p {
+    font-size: 15px;
+    color: #777;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    background-color: #fad7b4;
+}
+
+.button {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    padding: 8px;
+    background-color: #eeaf71;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: color 0.40s ease, transform 0.20s ease;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.button:hover {
+    transform: scale(1.2);
+}
+

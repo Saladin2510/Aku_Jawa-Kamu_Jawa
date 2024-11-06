@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" onkeypress="jump()">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game jawa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="box" id="box">
+        <div class="score" id="score">
+            <abbr title="score : 0">ꦱ꧀ꦕꦺꦴꦫꦺ꧇꧇꧐꧇</abbr>
+            <a href="../../zildan/home.html" class="button">Balik beranda</a>
+        </div>
+        <img src="keraton png.png" alt="" id="keraton" />
+        <img src="screenshot.png" alt="" id="screenshot" />
+        <div class="roadcontainer" id="roadcontainer">
+            <img src="road.png" alt="" />
+        </div>
+    </div>
+</body>
+<script>
+    const char = document.getElementById("keraton")
+    const screenshot = document.getElementById("screenshot")
+    const playerScore = document.getElementById("score")
+
+    let score = 0
+    let interval = null
+
+    let jumlahScore = () => {
+        score++
+        playerScore.innerHTML = `score : ${score} `
+    };
+
+    function pauseVid() {
+        vid.pause();
+    }
+    function jump() {
+        if (char.classList != "animate") {
+            char.classList.add("animate");
+        }
+        setTimeout(function () {
+            char.classList.remove("animate")
+        }, 500)
+        let score = 0
+        interval = setInterval(jumlahScore, 100)
+    }
+
+    const ifHitscreenshot = setInterval(function () {
+        const charTop = parseInt(window.getComputedStyle(char).getPropertyValue("top"))
+        const screenshotLeft = parseInt(window.getComputedStyle(screenshot).getPropertyValue("left"))
+        if (screenshotLeft < 130 && screenshotLeft > 0 && charTop >= 60) {
+            screenshot.style.animation = "none"
+            screenshot.style.display = "none"
+            if (confirm("dadi, rampung ndolani game kie, opo saran lan kritik sampean tentang game kie? jelasna tulungg...")) {
+                window.location.reload()
+            }
+        }
+
+    })
+</script>
+
+</html>
