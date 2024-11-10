@@ -76,7 +76,7 @@ body {
     position: relative;
     top: 110px;
     left: 850px;
-    animation: screenshot 1s infinite linear;
+    animation: screenshot 1.5s infinite linear;
 }
 
 
@@ -109,10 +109,10 @@ body {
     }
     
     30%{
-        top: 53px;
+        top: 30px;
     }
     70%{
-        top: 53px;
+        top: 30px;
     }
     100%{
         top: 103px;
