@@ -41,10 +41,10 @@ function checkAnswer() {
     const resultElement = document.getElementById('result');
 
     if (userInput == correctAnswer) { // Jika jawaban benar
-        resultElement.textContent = 'Benar!';
+        resultElement.textContent = 'Bener! 👌';
         resultElement.style.color = 'green';
     } else { // Jika jawaban salah
-        resultElement.textContent = `Salah! Angka yang benar adalah ${correctAnswer}`;
+        resultElement.textContent = `Salah! Angka sing bener yaiku ${correctAnswer}`;
         resultElement.style.color = 'red';
     }
 }
