@@ -35,8 +35,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 18px;
-    height: 60vh;
+    margin-top: 160px;
 }
 
 .kartu {
@@ -45,7 +44,7 @@ body {
     background-color: #c2864b;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0, .2);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     margin: 15px;
 }
 
@@ -60,7 +59,7 @@ body {
 }
 
 .konten-kartu h3 {
-    font-size: px;
+    font-size: 20px;
     margin-bottom: 8px;
     color: #fff;
 }
@@ -85,26 +84,78 @@ body {
 .konten-kartu .button:hover {
     background-color: #fff;
     color: black;
-}
-
-.button:hover {
     transform: scale(1.2);
 }
 
 footer {
     background-color: #c2864b;
     color: #fff;
-    padding: 20px;
-    margin-top: 76px;
-}
-
-.footer-bottom {
+    padding: 30px;
     text-align: center;
-    padding: 3px 0;
-    font-size: 14px;
-
+    margin-top: 10%;
 }
 
-.footer-bottom p {
-    margin-top: 10px;
+@media (max-width: 768px) {
+    .kotakhead {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    .nav1, .nav2 {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .head2 {
+        text-align: center;
+        margin: 5px;
+    }
+
+    .kotak-kartu {
+        flex-direction: column; /* Susun vertikal kartu */
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .kartu {
+        width: 90%; /* Atur lebar kartu agar muat di layar kecil */
+        max-width: none; /* Hilangkan batas max-width */
+    }
+
+    footer {
+        padding: 30px;
+        margin-top: 20%;
+    }
+}
+
+/* Responsif untuk layar sangat kecil (ponsel ukuran kecil) */
+@media (max-width: 480px) {
+    .kotakhead {
+        font-size: 14px;
+    }
+
+    .nav1, .nav2 {
+        font-size: 14px;
+    }
+
+    .kartu img {
+        height: 25vh; /* Kurangi tinggi gambar kartu */
+    }
+
+    .konten-kartu h3 {
+        font-size: 18px;
+    }
+
+    .konten-kartu p {
+        font-size: 14px;
+    }
+
+    .konten-kartu .button {
+        padding: 6px 12px; /* Sesuaikan ukuran tombol */
+    }
+
+    footer {
+        padding: 30px;
+        font-size: 14px;
+    }
 }
